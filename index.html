@@ -38,7 +38,7 @@
           г. Санкт-Петербург, Б. Конюшенная, д. 19/8
         </p>
         <ul class="user-menu">
-          <li class="user-menu-item user-menu-item-login">Войти</li>
+          <li class="user-menu-item user-menu-item-login"><a href="register.html">Войти</a></li>
           <li class="user-menu-item user-menu-item-register"><a href="info.html">Регистрация</a></li>
         </ul>
       </section>
@@ -187,28 +187,44 @@
         </div>
           <ul class="catalog-manufacturer">
             <li>
-              <img src="img/bosch.jpg" width="126" height="37" alt="Производитель Bosch">
+              <a href="#">
+                <img src="img/bosch.jpg" width="126" height="37" alt="Производитель Bosch">
+              </a>
             </li>
             <li>
-              <img src="img/makita.jpg" width="123" height="40" alt="Производитель Makita">
+              <a href="#">
+                <img src="img/makita.jpg" width="123" height="40" alt="Производитель Makita">
+              </a>
             </li>
             <li>
-              <img src="img/de-walt.jpg" width="146" height="44" alt="Производитель De-walt">
+              <a href="#">
+                <img src="img/de-walt.jpg" width="146" height="44" alt="Производитель De-walt">
+              </a>
             </li>
             <li>
-              <img src="img/interskol.jpg" width="200" height="88" alt="Производитель Interskol">
+              <a href="#">
+                <img src="img/interskol.jpg" width="200" height="88" alt="Производитель Interskol">
+              </a>
             </li>
             <li>
-              <img src="img/hitachi.jpg" width="169" height="31" alt="Производитель Hitachi">
+              <a href="#">
+                <img src="img/hitachi.jpg" width="169" height="31" alt="Производитель Hitachi">
+              </a>
             </li>
             <li>
-              <img src="img/lg.jpg" width="121" height="73" alt="Производитель Lg">
+              <a href="#">
+                <img src="img/lg.jpg" width="121" height="73" alt="Производитель Lg">
+              </a>
             </li>
             <li>
-              <img src="img/aeg.jpg" width="151" height="96" alt="Производитель Aeg">
+              <a href="#">
+                <img src="img/aeg.jpg" width="151" height="96" alt="Производитель Aeg">
+              </a>
             </li>
             <li>
-              <img src="img/metabo.jpg" width="204" height="69" alt="Производитель Bosch">
+              <a href="#">
+                <img src="img/metabo.jpg" width="204" height="69" alt="Производитель Bosch">
+              </a>
             </li>
           </ul>
       </section>
@@ -219,7 +235,7 @@
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-
+        <!-- Блок - Доставка, Гарантия, Кредит - это не кнопки и не ссылки? Просто слайдер с выделенным белым цветом css пунктом?  -->
         <ul class="bottom-slider-features">
           <li class="bottom-slider-features-list">
             Доставка
@@ -305,14 +321,47 @@
            Вы можете забрать товар сами,<br>
            заехав в наш офис:
         </p>
-        <img src="img/map.png" width="300" height="158" alt="Офис Техномарт на карте">
-        <!-- Здесь будет интерактивная карта от Яндекс карты -->
-        <p class="btn btn-open-form">
-          <a href="write-us.html">
-            Заблудились? Напишите нам!
-          </a>
+        <p>
+          <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
-        <!-- Здесь будет форма обратной связи -->
+        <p>
+          <img src="img/map-full.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+          <button class="modal-close" type="button">
+            Закрыть
+          </button>
+        <p class="btn btn-open-form">
+        <p>
+          <button>Заблудились? Напишите нам!</button>
+        </p>
+        <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label>
+              Ваше имя:
+            <input class="feedback-field" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </p>
+          <p>
+            <label>
+              Ваш e-mail:
+            <input class="feedback-field" type="text" name="email" placeholder="email@example.com">
+            </label>
+          </p>
+          <p>
+            <label>
+              Текст письма:
+            <textarea type="text" name="letter-text" rows="5" placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+          <p class="feedback-submit">
+          <button class="button" type="submit">
+            Отправить
+          </button>
+          </p>
+        </form>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
       </section>
     </main>
     <footer class="main-footer">
@@ -327,17 +376,53 @@
       </section>
       <section class="footer-navigation">
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="company.html">Компания</a></li>
-          <li class="site-navigation-item"><a href="news.html">Новости</a></li>
-          <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
-          <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
-          <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
+          <li class="site-navigation-item">
+            <a href="company.html">
+              Компания
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="news.html">
+              Новости
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="catalog.html">
+              Каталог
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="delivery.html">
+              Доставка
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="contacts.html">
+              Контакты
+            </a>
+          </li>
         </ul>
         <ul class="site-navigation-lower">
-          <li class="site-navigation-item-lower"><a href="materials.html">Материалы</a></li>
-          <li class="site-navigation-item-lower"><a href="equipments.html">Техника</a></li>
-          <li class="site-navigation-item-lower"><a href="instruments.html">Инструмент</a></li>
-          <li class="site-navigation-item-lower"><a href="special-offers.html">Спецпредложения</a></li>
+          <li class="site-navigation-item-lower">
+            <a href="materials.html">
+              Материалы
+            </a>
+          </li>
+          <li class="site-navigation-item-lower">
+            <a href="equipments.html">
+              Техника
+            </a>
+          </li>
+          <li class="site-navigation-item-lower">
+            <a href="instruments.html">
+              Инструмент
+            </a>
+          </li>
+          <li class="site-navigation-item-lower">
+            <a href="special-offers.html">
+              Спецпредложения
+            </a>
+          </li>
         </ul>
       </section>
       <section class="footer-info">
@@ -346,17 +431,30 @@
           Все права защищены
         </p>
           <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">
+              <img src="img/icon-vk.svg" width="26" height="15" aria-label="Техномарт в ВКонтаке">
+            </a>
+          </li>
+            <li><a class="social-button" href="#">
+              <img src="img/icon-fb.svg" width="12" height="22" aria-label="Техномарт в Фейсбук">
+            </a>
+          </li>
+            <li><a class="social-button" href="#">
+              <img src="img/icon-insta.svg" width="21" height="21" aria-label="Техномарт в Инстаграм">
+            </a>
+          </li>
           </ul>
         <p class="footer-link">
           Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
         </p>
         <p class="footer-link">
           Разработано -
-          <a href="//htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            htmlacademy.ru
+          </a>
         </p>
       </section>
     </footer>

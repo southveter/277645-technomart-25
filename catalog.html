@@ -7,8 +7,8 @@
   <body>
     <header class="main-header">
       <section class="main-header-panel">
-        <a class="main-header-logo">
-          <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интенернет-магазина инструментов «Техномарт»">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo-technomart.svg" width="109" height="19" aria-label="Логотип интенернет-магазина инструментов «Техномарт»">
         </a>
         <div class="user-features-search">
           Поиск:</div>
@@ -45,7 +45,7 @@
       </section>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a>Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
@@ -59,14 +59,77 @@
     <main class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item breadcrumbs-item-current"><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-item breadcrumbs-item-current">Инструмент</a></li>
+        <li class="breadcrumbs-item breadcrumbs-item-current"><a href="#">Инструмент</a></li>
         <li class="breadcrumbs-item breadcrumbs-item-current">Перфораторы</li>
       </ul>
       <h1 class="page-title">Перфораторы</h1>
       <section class="filters">
-        <h2>Фильтр:</h2>
-              <!-- Здесь будет форма -->
-      </section>
+        <p>Фильтр:</p>
+        <p>Цена:</p>
+        <p>0 - 30000</p>
+        <form class="filter" method="get"
+          action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="filter-manufacturer">
+              Производители:
+            </legend>
+              <ul>
+                <li>
+                  <label>
+                    Bosch
+                    <input type="checkbox" name="Bosch" checked>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    Интерскол
+                    <input type="checkbox" name="Интерскол">
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    Makita
+                    <input type="checkbox" name="Makita" checked>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    Dewalt
+                    <input type="checkbox" name="Dewalt">
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    Hitachi
+                    <input type="checkbox" name="Hitachi">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Питание:
+              </legend>
+              <ul>
+                <li>
+                  <label>
+                    Аккумуляторные
+                    <input type="radio" name="product-group" value="accumulator">
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    Сетевые
+                    <input type="radio" name="product-group" value="power-socket">
+                  </label>
+                </li>
+              </fieldset>
+              <button type="submit">Показать</button>
+            </form>
+            <p>
+              СОРТИРОВКА: ПО ЦЕНЕ ПО ТИПУ ПО ФУНКЦИОНАЛУ
+            </p>
+          </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="catalog-list">
@@ -252,7 +315,42 @@
               </p>
             </li>
           </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
+          </ul>
         </section>
+        <section class="basket">
+        <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+              <img src="img/modal-check.svg" width="66" height="66"> Товар добавлен в корзину!
+          </p>
+          <p class="feedback-submit">
+          <button class="button" type="submit">
+            ОФОРМИТЬ ЗАКАЗ
+          </button>
+          </p>
+          <p class="continue-shopping">
+          <button class="button" type="submit">
+            ПРОДОЛЖИТЬ ПОКУПКИ
+          </button>
+          </p>
+        </form>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+      </section>
+      <section class="category-info">
+        <p>
+          ПАРА СЛОВ О ПЕРФОРАТОРАХ
+        </p>
+        <p class="category-info-text">
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
+      </section>
+      </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer-company-area">
@@ -284,11 +382,20 @@
           &copy; 2010-2017 Компания «Техномарт»
           Все права защищены
         </p>
-          <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
-          </ul>
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">
+            <img src="img/icon-vk.svg" width="26" height="15" aria-label="Техномарт в ВКонтаке">
+          </a>
+        </li>
+          <li><a class="social-button" href="#">
+            <img src="img/icon-fb.svg" width="12" height="22" aria-label="Техномарт в Фейсбук">
+          </a>
+        </li>
+          <li><a class="social-button" href="#">
+            <img src="img/icon-insta.svg" width="21" height="21" aria-label="Техномарт в Инстаграм">
+          </a>
+        </li>
+        </ul>
         <p class="footer-link">
           Обратная связь:
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
