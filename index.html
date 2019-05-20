@@ -57,7 +57,7 @@
     <main class="container">
       <section class="offers">
         <h2 class="visually-hidden">Ассортимент и услуги компании «Техномарт»</h2>
-        <div class="offers-item offers-item-equipment">
+        <div class="offers-item offers-item-materials">
           <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
           <h3 class="offers-item">Материалы</h3>
           <a class="buttton offers-item-buttton" href="materials.html">На любой вкус</a>
@@ -67,28 +67,46 @@
           <h3 class="offers-item">Инструмент</h3>
           <a class="buttton offers-item-buttton" href="equipment.html">На все случаи</a>
         </div>
-        <div class="offers-item offers-item-equipment">
+        <div class="offers-item offers-item-building">
           <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
           <h3 class="offers-item">Техника</h3>
           <a class="buttton offers-item-buttton" href="building.html">Для стройки</a>
         </div>
-        <div class="offers-item offers-item-equipment">
+        <div class="offers-item offers-item-sales">
           <img src="img/icon-4.svg" width="59" height="72" alt="Скидки 50%">
           <h3 class="offers-item">Скидки 50%</h3>
           <a class="buttton offers-item-buttton" href="sales.html">На 350 товаров</a>
         </div>
-        <div class="offers-item offers-item-equipment">
+        <div class="offers-item offers-item-delivery">
           <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
           <h3 class="offers-item">Доставка</h3>
           <a class="buttton offers-item-buttton" href="delivery.html">Бесплатно</a>
         </div>
         <div class="offers-slider">
-          <img src="img/slide-image.jpg" width="620" height="266" alt="Дрели">
-          <p>Дрели Соседям на радость!</p>
-          <a class="buttton offers-slide-buttton" href="catalog.html">Открыть каталог</a>
-          <img src="img/slide-image-1.jpg" width="620" height="266" alt="Перфораторы">
-          <p>Перфораторы Настоящие мужские игрушки</p>
-          <a class="buttton offers-slide-buttton" href="catalog.html">Открыть каталог</a>
+           <div class="offers-slider-item offers-slider-1">
+              <p class="offers-slider-title">
+                Дрели
+              </p>
+              <p class="offers-slider-text">
+                Соседям на радость!
+              </p>
+              <a class="buttton offers-slide-buttton" href="catalog.html">Открыть каталог</a>
+           </div>
+           <div class="offers-slider-item offers-slider-2">
+              <p class="offers-slider-title">
+                Перфораторы
+              </p>
+              <p class="offers-slider-text">
+                Настоящие мужские игрушки
+              </p>
+              <a class="buttton offers-slide-buttton" href="catalog.html">Открыть каталог</a>
+           </div>
+           <div class="offers-slider-controls">
+             <button class="offers-slider-button offers-slider-button-back" type="button"></button>
+             <button class="offers-slider-button offers-slider-button-next" type="button"></button>
+             <input type="radio" name="offers-slider">
+             <input type="radio" name="offers-slider">
+           </div>
         </div>
       </section>
       <section class="popular-header">
@@ -184,60 +202,53 @@
           <h2 class="popular-item-header">Популярные производители</h2>
           <a class="buttton popular-item-buttton">Все производители</a>
         </div>
-          <ul class="catalog-manufacturer catalog-manufacturer-item">
-            <li>
+          <ul class="catalog-manufacturer">
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/bosch.jpg" width="126" height="37" alt="Производитель Bosch">
               </a>
             </li>
-            <li>
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/makita.jpg" width="123" height="40" alt="Производитель Makita">
               </a>
             </li>
-            <li>
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/de-walt.jpg" width="146" height="44" alt="Производитель De-walt">
               </a>
             </li>
-            <li>
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/interskol.jpg" width="200" height="88" alt="Производитель Interskol">
               </a>
             </li>
-            <li>
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/hitachi.jpg" width="169" height="31" alt="Производитель Hitachi">
               </a>
             </li>
-            <li>
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/lg.jpg" width="121" height="73" alt="Производитель Lg">
               </a>
             </li>
-            <li>
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/aeg.jpg" width="151" height="96" alt="Производитель Aeg">
               </a>
             </li>
-            <li>
+            <li class=" catalog-manufacturer-item">
               <a href="#">
                 <img src="img/metabo.jpg" width="204" height="69" alt="Производитель Bosch">
               </a>
             </li>
           </ul>
       </section>
-      <section class="service">
-        <p class="bottom-slider-service">
-          Сервисы
-        </p>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <section class="service">
-          <p class="bottom-slider-service">
+        <section class="services">
+          <h2 class="additional-services">
             Сервисы
-          </p>
+          </h2>
           <p>
             Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
@@ -300,7 +311,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href="company.html">Подробнее о компании</a>
+        <a class="button company-button" href="company.html">Подробнее о компании</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
@@ -313,9 +324,9 @@
           <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </a>
         </p>
-        <p class="btn btn-open-form">
-          <button>Заблудились? Напишите нам!</button>
-        </p>
+        <a class="button feedback-button">
+          Заблудились? Напишите нам!</button>
+        </a>
       </section>
     </main>
     <footer class="main-footer">

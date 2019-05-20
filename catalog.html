@@ -62,12 +62,16 @@
         <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
         <li class="breadcrumbs-item breadcrumbs-item-current">Перфораторы</li>
       </ul>
-      <h1 class="page-title">Перфораторы</h1>
+      <h1 class="page-title">
+        Перфораторы
+      </h1>
       <section class="filters">
+        <h2 class="filters-title">
+          Фильтр:
+        </h2>
         <form class="filter" method="get"
           action="https://echo.htmlacademy.ru">
           <fieldset>
-            <p>Фильтр:</p>
             <legend class="filter-manufacturer">
               Цена:
             </legend>
@@ -79,6 +83,8 @@
                 <input type="text" name="max-price" value="30000">
               </label>
             </div>
+            </fieldset>
+            <fieldset>
             <legend class="filter-manufacturer">
               Производители:
             </legend>
@@ -340,10 +346,10 @@
             <li class="pagination-item"><a href="#">Следующая</a></li>
           </ul>
         </section>
-      <section class="category-info">
-        <p>
+      <section class="category">
+        <h2 class="category-info">
           Пара слов о перфораторах
-        </p>
+        </h2>
         <p class="category-info-text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
@@ -405,18 +411,16 @@
       </section>
     </footer>
     <section class="basket">
-    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
       <div class="shopping-window">
         <a class="button shopping-window-button" href="#">
           Оформить заказ
         </a>
         </p>
         <p class="continue-shopping">
-          <button class="button" type="submit">
+          <button class="button" type="button">
             Продолжить покупки
           </button>
     </div>
-    </form>
     <button class="modal-close" type="button">
       Закрыть
     </button>
