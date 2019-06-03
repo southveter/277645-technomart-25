@@ -346,7 +346,13 @@ label {
   list-style: none;
 }
 
-.bottom-site-navigation-item:hover,
+.bottom-site-navigation-item a {
+  color: #ffffff;
+}
+
+.bottom-site-navigation-item a:hover {
+}
+
 .bottom-site-navigation-item a:focus {
   text-decoration: underline;
 }
@@ -354,10 +360,6 @@ label {
 .bottom-site-navigation-item a:active {
   color: rgba(241, 245, 247, 0.5);
   text-decoration: none;
-}
-
-.bottom-site-navigation-item a {
-  color: #ffffff;
 }
 
 .site-navigation-lower {
