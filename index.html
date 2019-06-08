@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <section class="main-header-panel">
+        <div class="main-header-panel-wrapper">
         <a class="main-header-logo">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интенернет-магазина инструментов «Техномарт»">
         </a>
@@ -31,16 +31,22 @@
               Оформить заказ
             </a>
           </div>
+          </div>
       </section>
       <section class="second-header-panel">
+        <div class="second-header-panel-wrapper">
         <p class="about-us">Интернет-магазин строительных материалов и инструмента для ремонта</p>
         <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
+        <div class="header-contacts-wrapper">
+          <!-- Не знаю, как подтянуть еще больше адрес с телефону -->
         <p class="header-phone">
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <p class="header-adress">
             г. Санкт-Петербург, Б. Конюшенная, д. 19/8
         </p>
+        </div>
+        <!-- Не знаю, почему белый бэкграунд полей тянется вниз, полагаю из-за адреса выше -->
         <ul class="user-menu">
           <li class="user-menu-item user-menu-item-login">
             <a href="register.html">
@@ -53,8 +59,13 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
       <nav class="main-navigation">
+        <div class="container">
+        <!-- Получалось фисировать ширину, но не получалось сделать по центру
+            не ясно, как сделать разнную ширину блоков и маргины при текущем коде.
+            Добавлять класс каждому li?-->
         <ul class="site-navigation">
           <li><a>Главная</a></li>
           <li class="site-navigation-item"><a href="company.html">Компания</a></li>
@@ -64,6 +75,7 @@
           <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
           <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
         </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
@@ -309,6 +321,7 @@
              </div>
           </div>
         </section>
+        <div class="features-columns-wrapper">
       <section class="features">
         <h2 class="features">Компания «Техномарт»</h2>
         <p>
@@ -340,8 +353,10 @@
           Заблудились? Напишите нам!</button>
         </a>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
+      <div class="container">
       <section class="main-footer-company-area">
         <a class="main-header-logo">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интенернет-магазина инструментов «Техномарт»">
@@ -351,6 +366,9 @@
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
       </section>
+      <!-- Делать два флекса: один с лого и адресом, а второй с двумя блоками с flex-direction:column
+          и эти два флекса обернуть в еще один сверху?-->
+      <div class="footer-navigation-wrapper">
       <section class="footer-navigation">
         <ul class="site-navigation">
           <li class="bottom-site-navigation-item">
@@ -379,6 +397,7 @@
             </a>
           </li>
         </ul>
+        <div class="site-navigation-lower-wrapper">
         <ul class="site-navigation-lower">
           <li class="site-navigation-item-lower">
             <a href="materials.html">
@@ -401,12 +420,15 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
+    </div>
       <section class="footer-info">
-        <p>
+        <p class="footer-contacts">
           &copy; 2010-2017 Компания «Техномарт»
           Все права защищены
         </p>
+        <!-- Кнопки соц сетей не смог разнести-->
           <ul class="footer-social">
             <li><a class="social-button" href="#">
               <img src="img/icon-vk.svg" width="26" height="15" alt="Техномарт в ВКонтаке">
@@ -421,19 +443,20 @@
             </a>
           </li>
           </ul>
-        <p class="footer-link">
+        <p class="footer-link email-footer-link">
           Обратная связь:
           <a href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru
           </a>
         </p>
-        <p class="footer-link">
+        <p class="footer-link url-footer-link">
           Разработано -
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             htmlacademy.ru
           </a>
         </p>
       </section>
+    </div>
     </footer>
     <section class="feedback-modal">
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
