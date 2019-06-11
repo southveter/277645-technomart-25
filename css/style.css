@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,15 +22,11 @@ a {
 }
 
 .main-header-panel {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 45px;
   background-color: #293449;
 }
 
 .main-header-panel-wrapper {
   display: flex;
-  width: 940px
 }
 
 .main-header-logo {
@@ -32,7 +36,7 @@ a {
 }
 
 .container {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -115,19 +119,17 @@ a {
 
 .main-header {
   background-color: #f4f7f9;
-  margin-bottom: 45px;
+  padding-bottom: 60px;
 }
 
 .second-header-panel {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 45px;
+  padding-top: 46px;
   background-color: #f4f7f9;
+  margin-bottom: 44px;
 }
 
 .second-header-panel-wrapper {
   display: flex;
-  width: 940px
 }
 
 .about-us {
@@ -164,6 +166,11 @@ a {
   border: solid 3px #ffffff;
   font-size: 21px;
   color: #ee3643;
+  margin: 0;
+  margin-top: 16px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  text-align: center;
 }
 
 .header-phone a {
@@ -173,6 +180,7 @@ a {
 .header-adress {
   font-size: 14px;
   color: #32425c;
+  text-align: center;
 }
 
 .user-links a:hover,
@@ -184,6 +192,11 @@ a {
   display: flex;
   list-style: none;
   background-color: inherit;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  height: 45px;
+  text-align: center;
 }
 
 .user-menu a:hover,
@@ -226,6 +239,15 @@ a {
   font-size: 18px;
   color: #f1f5f7;
   list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation a {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 26px;
 }
 
 .site-navigation-item {
@@ -247,6 +269,8 @@ a {
 
 .site-navigation-item a {
   color: #ffffff;
+  padding-top: 22px;
+  padding-bottom: 26px;
 }
 
 .breadcrumbs {
