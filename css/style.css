@@ -414,6 +414,10 @@ label {
   width: 300px;
 }
 
+.footer-top-container {
+    display: flex;
+}
+
 .main-footer-company-area {
   display: flex;
   flex-direction: column;
@@ -426,13 +430,10 @@ label {
     color: #ffffff;
 }
 
-.footer-navigation-wrapper {
-  display: flex;
-  flex-direction: column;
-
-}
 
 .footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 17px;
   background-color: #32425c;
 }
@@ -501,6 +502,10 @@ label {
   background-color: #293449;
 }
 
+.footer-bottom-container {
+  display: flex;
+}
+
 .footer-contacts {
   width: 322px;
   margin-left: 3px;
@@ -508,14 +513,21 @@ label {
 
 .footer-social {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   background-color: #212a3a;
-  margin-right: 120px;
+  padding: 0;
 }
 
 .social-button {
   background-color: #212a3a;
+}
+
+.footer-social-item {
+  margin-right: 25px;
+}
+
+.footer-social li:last-child {
+  margin: 0;
 }
 
 .social-button:hover,

@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <section class="main-header-panel">
+        <div class="main-header-panel-wrapper container">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интенернет-магазина инструментов «Техномарт»">
         </a>
@@ -31,6 +31,7 @@
             Оформить заказ
           </a>
         </div>
+      </div>
       </section>
       <section class="second-header-panel">
         <p class="about-us">Интернет-магазин строительных материалов и инструмента для ремонта</p>
@@ -361,6 +362,7 @@
       </section>
     </main>
     <footer class="main-footer">
+      <div class="container footer-top-container">
       <section class="main-footer-company-area">
         <a class="main-header-logo">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интенернет-магазина инструментов «Техномарт»">
@@ -372,46 +374,93 @@
       </section>
       <section class="footer-navigation">
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="company.html">Компания</a></li>
-          <li class="site-navigation-item"><a href="news.html">Новости</a></li>
-          <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
-          <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
-          <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
+          <li class="bottom-site-navigation-item">
+            <a href="company.html">
+              Компания
+            </a>
+          </li>
+          <li class="bottom-site-navigation-item">
+            <a href="news.html">
+              Новости
+            </a>
+          </li>
+          <li class="bottom-site-navigation-item">
+            <a href="catalog.html">
+              Каталог
+            </a>
+          </li>
+          <li class="bottom-site-navigation-item">
+            <a href="delivery.html">
+              Доставка
+            </a>
+          </li>
+          <li class="bottom-site-navigation-item">
+            <a href="contacts.html">
+              Контакты
+            </a>
+          </li>
         </ul>
         <ul class="site-navigation-lower">
-          <li class="site-navigation-item-lower"><a href="materials.html">Материалы</a></li>
-          <li class="site-navigation-item-lower"><a href="equipments.html">Техника</a></li>
-          <li class="site-navigation-item-lower"><a href="instruments.html">Инструмент</a></li>
-          <li class="site-navigation-item-lower"><a href="special-offers.html">Спецпредложения</a></li>
+          <li class="site-navigation-item-lower">
+            <a href="materials.html">
+              Материалы
+            </a>
+          </li>
+          <li class="site-navigation-item-lower">
+            <a href="equipments.html">
+              Техника
+            </a>
+          </li>
+          <li class="site-navigation-item-lower">
+            <a href="instruments.html">
+              Инструмент
+            </a>
+          </li>
+          <li class="site-navigation-item-lower">
+            <a href="special-offers.html">
+              Спецпредложения
+            </a>
+          </li>
         </ul>
       </section>
+    </div>
       <section class="footer-info">
-        <p>
+        <div class="container footer-bottom-container">
+        <p class="footer-contacts">
           &copy; 2010-2017 Компания «Техномарт»
           Все права защищены
         </p>
-        <ul class="footer-social">
-          <li><a class="social-button" href="#">
-            <img src="img/icon-vk.svg" width="26" height="15" aria-label="Техномарт в ВКонтаке">
-          </a>
-        </li>
-          <li><a class="social-button" href="#">
-            <img src="img/icon-fb.svg" width="12" height="22" aria-label="Техномарт в Фейсбук">
-          </a>
-        </li>
-          <li><a class="social-button" href="#">
-            <img src="img/icon-insta.svg" width="21" height="21" aria-label="Техномарт в Инстаграм">
-          </a>
-        </li>
-        </ul>
-        <p class="footer-link">
+        <!-- Кнопки соц сетей не смог разнести-->
+          <ul class="footer-social">
+            <li class="footer-social-item">
+              <a class="social-button" href="#">
+              <img src="img/icon-vk.svg" width="26" height="15" alt="Техномарт в ВКонтакте">
+            </a>
+          </li>
+            <li class="footer-social-item">
+              <a class="social-button" href="#">
+              <img src="img/icon-fb.svg" width="12" height="22" alt="Техномарт в Фейсбук">
+            </a>
+          </li>
+            <li class="footer-social-item">
+              <a class="social-button" href="#">
+              <img src="img/icon-insta.svg" width="21" height="21" alt="Техномарт в Инстаграм">
+            </a>
+          </li>
+          </ul>
+        <p class="footer-link email-footer-link">
           Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
         </p>
-        <p class="footer-link">
+        <p class="footer-link url-footer-link">
           Разработано -
-          <a href="//htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            htmlacademy.ru
+          </a>
         </p>
+        </div>
       </section>
     </footer>
     <section class="basket">
