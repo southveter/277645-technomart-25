@@ -274,7 +274,9 @@ a {
 }
 
 .breadcrumbs {
+  display: flex;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .breadcrumbs-item a{
@@ -282,6 +284,8 @@ a {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  margin-right: 20px;
+
 }
 
 .breadcrumbs-item-current {
@@ -294,9 +298,11 @@ a {
 .page-title{
   font-size: 30px;
   line-height: 30px;
+  padding-top: 32px;
+  padding-bottom: 34px;
   color: #32425c;
   background-color: #f2f6f8;
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .features-columns-wrapper {
@@ -562,9 +568,71 @@ label {
   color: #ee3643;
 }
 
+.user-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  height: 45px;
+}
+
+.user-links li a {
+  font-family: Cuprum;
+  font-size: 16px;
+  list-style: none;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.profile-link {
+  font-family: Cuprum;
+  font-size: 21px;
+  color:#000000;
+  width: 299px;
+  height: 45px;
+  margin-left: 51px;
+  background-color: #ffffff;
+}
+
+.user-link-orders {
+  margin-left: 80px;
+}
+
+.user-link-cabinet {
+  margin-left: 32px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+    width: 220px;
+}
 
 
-.user-links a {
-  color: #000000;
+.catalog {
+  width: 700px;
+}
+
+.sorting-filters {
+  display: flex;
+}
+
+.catalog-item {
+  width: 219px;
+  margin-bottom: 21px;
+  border: solid 1px #e5e5e5;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }

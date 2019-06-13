@@ -34,21 +34,26 @@
       </div>
       </section>
       <section class="second-header-panel">
+        <div class="second-header-panel-wrapper container">
+          <!-- Не понял, почему начал сжиматься блок about-us, при фиксированной ширине-->
         <p class="about-us">Интернет-магазин строительных материалов и инструмента для ремонта</p>
+        <div class="header-contacts-wrapper">
         <p class="header-phone">
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <p class="header-adress">
             г. Санкт-Петербург, Б. Конюшенная, д. 19/8
         </p>
+        </div>
         <ul class="user-links">
           <li class="profile-link"><a href="profile.html">Равшан Джамшутович</a></li>
           <li class="profile-out"><a href="profile-out.html"></a></li>
-          <li><a href="my-orders.html">Мои заказы</a></li>
-          <li><a href="cabinet.html">Личный кабинет</a></li>
+          <li class="user-link-orders"><a href="my-orders.html">Мои заказы</a></li>
+          <li class="user-link-cabinet"><a href="cabinet.html">Личный кабинет</a></li>
         </ul>
+        </div>
       </section>
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="index.html">Главная</a></li>
           <li class="site-navigation-item"><a href="company.html">Компания</a></li>
@@ -70,6 +75,7 @@
       <h1 class="page-title">
         Перфораторы
       </h1>
+      <div class="catalog-columns">
       <section class="filters">
         <h2 class="filters-title">
           Фильтр:
@@ -147,19 +153,19 @@
               <button type="submit" class="filter-button">Показать</button>
             </form>
           </section>
-          <section class="sorting">
-            <p>
-              Сортировка:
-            </p>
-            <ul class="sorting-filters">
-              <li class="sorting-filters-item sorting-filters-item-current">По цене</li>
-              <li class="sorting-filters-item"><a href="#">По типу</a></li>
-              <li class="sorting-filters-item"><a href="#">По функционалу</a></li>
-              <li class="sorting-filters-item"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10"></a></li>
-              <li class="sorting-filters-item"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10"></a></li>
-            </ul>
-          </section>
       <section class="catalog">
+        <div class="sorting">
+          <p>
+            Сортировка:
+          </p>
+          <ul class="sorting-filters">
+            <li class="sorting-filters-item sorting-filters-item-current">По цене</li>
+            <li class="sorting-filters-item"><a href="#">По типу</a></li>
+            <li class="sorting-filters-item"><a href="#">По функционалу</a></li>
+            <li class="sorting-filters-item"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10"></a></li>
+            <li class="sorting-filters-item"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10"></a></li>
+          </ul>
+        </div>
         <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -351,6 +357,7 @@
             <li class="pagination-item"><a href="#">Следующая</a></li>
           </ul>
         </section>
+      </div>
       <section class="category">
         <h2 class="category-info">
           Пара слов о перфораторах
