@@ -326,7 +326,7 @@
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на настарбайтерах.
         </p>
         <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России!
+          Мы можем доставить ваш товар в самые отдаленные точки России<br>
           Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="features-list">
@@ -348,7 +348,7 @@
           </a>
         </p>
         <a class="button feedback-button">
-          Заблудились? Напишите нам!</button>
+          Заблудились? Напишите нам!
         </a>
       </section>
     </div>
@@ -454,40 +454,40 @@
         </div>
       </section>
     </footer>
-    <section class="feedback-modal">
+    <section class="modal feedback-modal">
+      <div class="modal-input-container">
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <p class="feedback-field">
           <label>
             Ваше имя:
           <input class="feedback-field" type="text" name="name" placeholder="Имя Фамилия">
           </label>
         </p>
-        <p>
+        <p class="feedback-field">
           <label>
             Ваш e-mail:
           <input class="feedback-field" type="text" name="email" placeholder="email@example.com">
           </label>
         </p>
-        <p>
+        <p class="feedback-text">
           <label>
             Текст письма:
-          <textarea type="text" name="letter-text" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea name="letter-text" rows="5" placeholder="В свободной форме"></textarea>
           </label>
         </p>
-        <p class="feedback-submit">
-        <button class="button" type="submit">
+        </div>
+        <div class="modal-button-container">
+        <button class="button feedback-modal-button" type="submit">
           Отправить
         </button>
-        </p>
+      </div>
       </form>
       <button class="modal-close" type="button">
         Закрыть
       </button>
     </section>
-    <section class="map-full">
-      <p>
+    <section class="modal map-modal">
         <img src="img/map-full.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </p>
         <button class="modal-close" type="button">
           Закрыть
         </button>
