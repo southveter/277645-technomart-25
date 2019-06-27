@@ -83,7 +83,7 @@
 
     <main class="container">
       <ul class="breadcrumbs">
-        <!-- как сделать ссылкой на главную, картинку домика?-->
+        <li class="breadcrumbs-index"><a href="index.html"></a></li>
         <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
         <li class="breadcrumbs-item"><a href="instrument.html">Инструмент</a></li>
         <li class="breadcrumbs-item breadcrumbs-item-current">Перфораторы</li>
@@ -485,20 +485,26 @@
         </div>
       </section>
     </footer>
-    <section class="basket">
-      <div class="shopping-window">
+    <section class="modal basket-modal">
+      <div class="modal-basket-container">
+        <p class="modal-basket-text">
+          Товар добавлен в корзину!
+        </p>
+      </div>
+        <div class="modal-button-basket-container">
         <a class="button shopping-window-button" href="#">
           Оформить заказ
         </a>
         </p>
-        <p class="continue-shopping">
-          <button class="button" type="button">
-            Продолжить покупки
-          </button>
-    </div>
-    <button class="modal-close" type="button">
-      Закрыть
-    </button>
+          <p class="continue-shopping">
+            <button class="button" type="button">
+              Продолжить покупки
+            </button>
+              </div>
+            <button class="modal-close" type="button">
+              Закрыть
+            </button>
+
   </section>
   </body>
 </html>
