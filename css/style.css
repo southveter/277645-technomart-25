@@ -1254,8 +1254,13 @@ label {
 }
 
 .services {
-  position: relative;
+  display: flex;
+  font-family: "PT Sans", Arial, sans-serif;
   background-color: #f4f7f9;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
 }
 
 .slider-list {
@@ -1279,6 +1284,13 @@ label {
   margin-bottom: 135px;
 }
 
+.slider-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 240px;
+}
+
 .slider-controls p {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -1288,7 +1300,7 @@ label {
   margin: 0;
   padding: 0;
   padding-left: 22px;
-  padding-top: 15px; 
+  padding-top: 15px;
   font-weight: 700;
 }
 
@@ -1304,4 +1316,36 @@ label {
   cursor: pointer;
 
   background-color: #32425c;
+}
+
+.additional-services {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 68px;
+}
+
+.additional-services-text {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 38px;
+  width: 400px;
+  margin-bottom: 74px;
+}
+
+.service-slider-item-title {
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 240px;
+  padding-left: 320px;
 }
