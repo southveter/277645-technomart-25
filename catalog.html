@@ -81,7 +81,8 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
+      <div class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-index"><a href="index.html"></a></li>
         <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
@@ -96,100 +97,112 @@
         <h2 class="filters-title">
           Фильтр:
         </h2>
-        <form class="filter" method="get"
-          action="https://echo.htmlacademy.ru">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend class="filter-manufacturer">
               Цена:
             </legend>
-            <div class="price-fields">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
               <label class="min-price" aria-label="0 рублей">
                 <input type="text" name="min-price" value="0">
               </label>
               <label class="max-price" aria-label="30000 рублей">
                 <input type="text" name="max-price" value="30000">
               </label>
+              </div>
+              <hr class="filter-hr">
             </div>
             </fieldset>
             <fieldset>
             <legend class="filter-manufacturer">
               Производители:
             </legend>
-              <ul>
-                <li>
-                  <label>
+              <ul class="filter-manufacturer-list">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+                  <label for="bosch">
                     Bosch
-                    <input type="checkbox" name="Bosch" checked>
                   </label>
                 </li>
-                <li>
-                  <label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
+                  <label for="interskol">
                     Интерскол
-                    <input type="checkbox" name="Интерскол">
                   </label>
                 </li>
-                <li>
-                  <label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
+                  <label for="makita">
                     Makita
-                    <input type="checkbox" name="Makita" checked>
                   </label>
                 </li>
-                <li>
-                  <label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
+                  <label for="dewalt">
                     Dewalt
-                    <input type="checkbox" name="Dewalt">
                   </label>
                 </li>
-                <li>
-                  <label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                  <label for="hitachi">
                     Hitachi
-                    <input type="checkbox" name="Hitachi">
                   </label>
                 </li>
+                <hr class="filter-hr">
               </ul>
             </fieldset>
             <fieldset>
-              <legend>
+              <legend class="filter-manufacturer">
                 Питание:
               </legend>
               <ul>
-                <li>
-                  <label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" id="filter-accumulator" checked>
+                  <label for="filter-accumulator">
                     Аккумуляторные
-                    <input type="radio" name="product-group" value="accumulator">
                   </label>
                 </li>
-                <li>
-                  <label>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="power-socket" id="filter-power-socket">
+                  <label for="filter-power-socket">
                     Сетевые
-                    <input type="radio" name="product-group" value="power-socket">
                   </label>
                 </li>
               </fieldset>
-              <button type="submit" class="filter-button">Показать</button>
+              <button type="submit" class="filter-button">
+                Показать
+              </button>
             </form>
           </section>
       <section class="catalog">
         <div class="sorting">
-          <p>
+          <p class="sorting-title">
             Сортировка:
           </p>
           <ul class="sorting-filters">
             <li class="sorting-filters-item sorting-filters-item-current">По цене</li>
             <li class="sorting-filters-item"><a href="#">По типу</a></li>
             <li class="sorting-filters-item"><a href="#">По функционалу</a></li>
-            <li class="sorting-filters-item"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10"></a></li>
-            <li class="sorting-filters-item"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10"></a></li>
+            <!-- <li class="sorting-filters-item"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10"></a></li>
+            <li class="sorting-filters-item"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10"></a></li> -->
           </ul>
         </div>
         <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="catalog-list">
             <li class="catalog-items">
-              <div class="flag flag-new">
-                Новинка
-              </div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                 <a href="catalog-item.html" class="catalog-item-image">
@@ -202,7 +215,7 @@
               </h3>
               <div class="catalog-item-price">
                 <p class="old-item-price">
-                  22500 ₽
+                  22500 Р.
                 </p>
                 <p class="new-item-price">
                 15500 Р.
@@ -210,9 +223,11 @@
               </div>
             </li>
             <li class="catalog-items">
-              <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                   <a href="catalog-item.html" class="catalog-item-image">
@@ -224,16 +239,21 @@
                 </a>
               </h3>
               <div class="catalog-item-price">
-                <span class="old-item-price">
-                  30500 ₽
-                </span>
-                <b>25500 ₽</b>
+                <p class="old-item-price">
+                  30500 Р.
+                </p>
+                <p class="new-item-price">
+                25500 Р.
               </p>
+              </div>
             </li>
             <li class="catalog-items">
               <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item-image">
@@ -245,16 +265,20 @@
                 </a>
               </h3>
               <div class="catalog-item-price">
-                <span class="old-item-price">
+                <p class="old-item-price">
 
-                </span>
-                <b>12500 ₽</b>
+                </p>
+                <p class="new-item-price">
+                12500 Р.
               </p>
+              </div>
             </li>
             <li class="catalog-items">
-              <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                   <a href="catalog-item.html" class="catalog-item-image">
@@ -266,16 +290,21 @@
                 </a>
               </h3>
               <div class="catalog-item-price">
-                <span class="old-item-price">
-                  22500 ₽
-                </span>
-                <b>15500 ₽</b>
+                <p class="old-item-price">
+                  22500 Р.
+                </p>
+                <p class="new-item-price">
+                15500 Р.
               </p>
+              </div>
             </li>
             <li class="catalog-items">
               <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                   <a href="catalog-item.html" class="catalog-item-image">
@@ -287,16 +316,20 @@
                 </a>
               </h3>
               <div class="catalog-item-price">
-                <span class="old-item-price">
-                  30500 ₽
-                </span>
-                <b>25500 ₽</b>
+                <p class="old-item-price">
+                  30500 Р.
+                </p>
+                <p class="new-item-price">
+                25500 Р.
               </p>
+              </div>
             </li>
             <li class="catalog-items">
-              <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                   <a href="catalog-item.html" class="catalog-item-image">
@@ -308,16 +341,21 @@
                 </a>
               </h3>
               <div class="catalog-item-price">
-                <span class="old-item-price">
+                <p class="old-item-price">
 
-                </span>
-                <b>12500 ₽</b>
+                </p>
+                <p class="new-item-price">
+                12500 Р.
               </p>
+              </div>
             </li>
             <li class="catalog-items">
               <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                   <a href="catalog-item.html" class="catalog-item-image">
@@ -329,16 +367,20 @@
                 </a>
               </h3>
               <div class="catalog-item-price">
-                <span class="old-item-price">
-                  22500 ₽
-                </span>
-                <b>15500 ₽</b>
+                <p class="old-item-price">
+                  22500 Р.
+                </p>
+                <p class="new-item-price">
+                15500 Р.
               </p>
+              </div>
             </li>
             <li class="catalog-items">
-              <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                 <a href="catalog-item.html" class="catalog-item-image">
@@ -351,16 +393,20 @@
               </h3>
 
               <div class="catalog-item-price">
-                <span class="old-item-price">
-                  30500 ₽
-                </span>
-                <b>25500 ₽</b>
+                <p class="old-item-price">
+                  30500 Р.
+                </p>
+                <p class="new-item-price">
+                25500 Р.
               </p>
+              </div>
             </li>
             <li class="catalog-items">
-              <div class="flag flag-new">Новинка</div>
               <div class="catalog-item-action">
-                <a class="button-catalog-item-action-buy" href="#">Купить</a>
+                <a class="button-catalog-item-action-buy" href="#">
+                  Купить
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon-catalog-item-action-buy"><circle  cx="4.5" cy="13.5" r="1.5"/><circle  cx="12.5" cy="13.5" r="1.5"/><path  d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                </a>
                 <a class="button-catalog-item-action-bookmark" href="#">В закладки</a>
               </div>
                 <a href="catalog-item.html" class="catalog-item-image">
@@ -372,28 +418,33 @@
                 </a>
               </h3>
               <div class="catalog-item-price">
-                <span class="old-item-price">
+                <p class="old-item-price">
 
-                </span>
-                <b>12500 ₽</b>
+                </p>
+                <p class="new-item-price">
+                12500 Р.
               </p>
+              </div>
             </li>
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"><a>1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
+      </div>
       <section class="category">
+        <div class="container">
         <h2 class="category-info">
           Пара слов о перфораторах
         </h2>
         <p class="category-info-text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
+        </div>
       </section>
       </section>
     </main>
