@@ -1685,6 +1685,7 @@ h2.features {
 
 .modal {
   position: fixed;
+  display: none;
 }
 
 .feedback {
@@ -1751,7 +1752,6 @@ label {
 }
 
 .feedback-modal {
-  display: none;
   top: 50%;
   left: 50%;
   margin-left: -310px;
@@ -1759,6 +1759,10 @@ label {
   background-color: #ffffff;
   width: 620px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-input-container {

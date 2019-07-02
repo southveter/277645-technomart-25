@@ -386,7 +386,7 @@
           <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </a>
         </p>
-        <a class="button feedback-button">
+        <a class="button feedback-button" href="feedback.html">
           Заблудились? Напишите нам!
         </a>
       </section>
@@ -532,5 +532,26 @@
           Закрыть
         </button>
     </section>
+
+    <script>
+    var link = document.querySelector(".feedback-button");
+
+    var popup = document.querySelector(".feedback-modal");
+    var close = popup.querySelector(".modal-close");
+    var name = popup.querySelector("[name=name]");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      name.focus();
+    });
+
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+    popup.classList.remove("modal-show");
+    });
+  </script>
+
   </body>
 </html>
