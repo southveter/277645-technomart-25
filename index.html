@@ -135,38 +135,43 @@
           </a>
         </div>
         <div class="offers-slider">
-          <div class="offers-slider-item offers-slider-1">
+          <input class="visually-hidden offers-control-slider-input" type="radio" id="offers-control-slider-1" name="offers-slider-toggle" checked>
+          <input class="visually-hidden offers-control-slider-input" type="radio" id="offers-control-slider-2" name="offers-slider-toggle">
+          <div class="offers-services-controls">
+            <label class="offers-slider-dot offers-slider-dot-one" for="offers-control-slider-1">
+            </label>
+            <label class="offers-slider-dot offers-slider-dot-two" for="offers-control-slider-2">
+            </label>
+            <label class="offers-slider-arrow-one" for="offers-control-slider-1">
+            </label>
+            <label class="offers-slider-arrow-two" for="offers-control-slider-2">
+            </label>
+            </div>
+          <ul class="offers-slider-list">
+            <li class="offers-slider-item offers-slider-item-one">
             <p class="offers-slider-title">
               Дрели
             </p>
             <p class="offers-slider-text">
               Соседям на радость!
             </p>
-            <a class="button offers-slide-button" href="catalog.html">
+            <a class="button offers-slider-button" href="catalog.html">
               Открыть каталог
             </a>
-          </div>
-          <div class="offers-slider-item offers-slider-2">
+          </li>
+          <li class="offers-slider-item offers-slider-item-two">
             <p class="offers-slider-title">
               Перфораторы
             </p>
             <p class="offers-slider-text">
               Настоящие мужские игрушки
             </p>
-            <a class="button offers-slide-button" href="catalog.html">
+            <a class="button offers-slider-button" href="catalog.html">
               Открыть каталог
             </a>
-          </div>
-          <div class="offers-slider-controls">
-            <button class="offers-slider-button offers-slider-button-back" type="button">
-            </button>
-            <button class="offers-slider-button offers-slider-button-next" type="button">
-            </button>
-            <input type="radio" name="offers-slider">
-            <input type="radio" name="offers-slider">
+          </li>
           </div>
         </div>
-      </div>
       <div class="offers-column-right">
         <div class="offers-item offers-item-building">
           <h3 class="offers-item-title">
@@ -199,7 +204,7 @@
         <h2 class="popular-item-header">
           Популярные товары:
         </h2>
-        <a class="button popular-item-button">
+        <a class="button popular-item-button" href="#">
           Все популярные товары
         </a>
       </div>
@@ -317,7 +322,7 @@
         <h2 class="popular-item-header">
           Популярные производители:
         </h2>
-        <a class="button popular-item-button">
+        <a class="button popular-item-button" href="#">
           Все производители
         </a>
       </div>
@@ -368,9 +373,6 @@
   <section class="services">
     <div class="container">
       <div class="additional-services-container">
-        <h2 class="visually-hidden">
-          Преимущества
-        </h2>
         <h2 class="additional-services">
           Сервисы
         </h2>
@@ -379,20 +381,22 @@
         </p>
       </div>
       <div class="additional-services-slider">
+        <input class="visually-hidden" type="radio" id="control-slider-1" name="additional-services-toggle" checked>
+        <input class="visually-hidden" type="radio" id="control-slider-2" name="additional-services-toggle">
+        <input class="visually-hidden" type="radio" id="control-slider-3" name="additional-services-toggle">
         <div class="additional-services-controls">
-          <i class="active">
+          <label class="control-slider-label control-slider-label-one" for="control-slider-1">
             Доставка
-          </i>
-          <i>
+          </label>
+          <label class="control-slider-label control-slider-label-two" for="control-slider-2">
             Гарантия
-          </i>
-          <i>
+          </label>
+          <label class="control-slider-label control-slider-label-three" for="control-slider-3">
             Кредит
-          </i>
+          </label>
         </div>
-        <div class="slider-list-wrapper">
           <ul class="slider-list">
-            <li class="slider-item">
+            <li class="slider-item slider-item-one">
               <h3 class="service-slider-item-title">
                 Доставка
               </h3>
@@ -400,30 +404,29 @@
                 Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="slider-item">
+            <li class="slider-item slider-item-two">
               <h3 class="service-slider-item-title">
                 Гарантия
               </h3>
               <p class="service-slider-item-text">
                 Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его возгоранием,
-                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                а также в случае пожара, спровоцированного его возгоранием,<br>
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br> сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li class="slider-item">
+            <li class="slider-item slider-item-three">
               <h3 class="service-slider-item-title">
                 Кредит
               </h3>
               <p class="service-slider-item-text">
                 Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.
               </p>
-              <a class="button credit-button">
+              <a class="button credit-button" href="#">
                 Отправить заявку
               </a>
             </li>
           </ul>
-        </div>
       </div>
     </div>
   </section>
