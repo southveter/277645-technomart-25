@@ -199,11 +199,11 @@ img {
   background-color: #ee3643;
 }
 
-input:hover + svg {
+.header-search:hover + svg {
   fill: rgba(255, 255, 255, 1);
 }
 
-input:focus + svg {
+.header-search:focus + svg {
   fill: #ee3643;
   opacity: 1;
 }
@@ -392,6 +392,7 @@ input:focus + svg {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   font-size: 17px;
   line-height: 17px;
   list-style: none;
@@ -829,7 +830,7 @@ h2.features {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -860,7 +861,7 @@ h2.features {
   border-radius: 3px;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1443,6 +1444,14 @@ h2.features {
   background-image: url("../img/radio-on-hover.svg");
 }
 
+.filter-input-radio:disabled + label::before {
+  background-image: url("../img/radio-off-disabled.svg");
+}
+
+.filter-input-radio:disabled + label::after {
+  background-image: url("../img/radio-on-disabled.svg");
+}
+
 .filter-button {
   display: block;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1741,12 +1750,6 @@ h2.features {
   margin: 0;
 }
 
-label {
-  font-size: 18px;
-  line-height: 18px;
-  color: #000000;
-}
-
 .feedback-name {
   margin: 0;
   padding: 0;
@@ -1805,6 +1808,7 @@ label {
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
 }
 
 .modal-input-container {
@@ -2165,6 +2169,18 @@ label {
   padding-bottom: 31px;
 }
 
+.service-slider-item-text-delivery {
+  padding-right: 340px;
+}
+
+.service-slider-item-text-guarantee {
+  padding-right: 240px;
+}
+
+.service-slider-item-text-credit {
+  padding-right: 340px;
+}
+
 .offers-slider-text {
   margin: 0;
   font-size: 18px;
@@ -2340,4 +2356,54 @@ label {
   padding: 0;
   margin: 0;
   padding-bottom: 69px;
+}
+
+.modal-input-container label {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
