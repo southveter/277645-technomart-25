@@ -1507,6 +1507,7 @@ h2.features {
   display: inline-block;
   width: 50%;
   font-size: 17px;
+  vertical-align: top;
 }
 
 .price-controls input {
@@ -1643,6 +1644,7 @@ h2.features {
   font-family: "PT Sans", Arial, sans-serif;
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 219px;
   margin-right: 20px;
   margin-bottom: 21px;
