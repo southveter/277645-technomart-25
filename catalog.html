@@ -7,7 +7,7 @@
   </title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header main-header-catalog">
@@ -694,35 +694,6 @@
     Закрыть
   </button>
 </section>
-
-  <script>
-  var links = document.querySelectorAll(".button-catalog-item-action-buy");
-  // var link = document.querySelector(".button-catalog-item-action-buy");
-
-  var popup = document.querySelector(".basket-modal");
-  var close = popup.querySelector(".modal-close");
-
-  // link.addEventListener("click", function (evt) {
-  //   evt.preventDefault();
-  //   popup.classList.add("modal-show");
-  //   name.focus();
-  // });
-
-  links.forEach(function(item) {
-    item.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-    });
-  });
-
-
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-
-</script>
-
-
+<script src="js/scripts.js"></script>
 </body>
 </html>

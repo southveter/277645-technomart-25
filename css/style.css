@@ -527,7 +527,7 @@ img {
 }
 
 .offers-item-delivery {
-  background-color: #ffc047;;
+  background-color: #ffc047;
   position: relative;
 }
 
@@ -1481,7 +1481,7 @@ h2.features {
   position: relative;
   height: 80px;
   margin-bottom: 9px;
-  background-color: #f7f3ec;;
+  background-color: #f7f3ec;
   padding-top: 39px;
   border-radius: 3px;
   padding-right: 20px;
@@ -1825,7 +1825,7 @@ h2.features {
   content: "";
   top: 0px;
   left: 0px;
-  background-color: #ee3643;;
+  background-color: #ee3643;
   width: 620px;
   height: 7px;
 }
@@ -1919,7 +1919,7 @@ h2.features {
   content: "";
   top: 0px;
   left: 0px;
-  background-color: #ee3643;;
+  background-color: #ee3643;
   width: 620px;
   height: 7px;
 }
@@ -2221,7 +2221,7 @@ h2.features {
 }
 
 .control-slider-label-three {
-  box-shadow: inset 0px 1px 0 0 #405069;;
+  box-shadow: inset 0px 1px 0 0 #405069;
 }
 
 .credit-button {
